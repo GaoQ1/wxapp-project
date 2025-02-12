@@ -1,0 +1,421 @@
+@import "./imgUrl/imgUrl.less";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #F0EFF5;
+}
+
+.head{
+  width: 100%;
+  height: 4.633rem;
+  background: #58A4EF;
+  display: flex;
+  flex-direction: column;
+ padding:0 1rem 0 1rem;
+  box-sizing: border-box;
+  color:#FFFFFF;
+  font-size: 26rpx;
+  position: fixed;
+  top:-0.267rem;
+  left: 0;
+
+}
+.inhead{
+  width: 100%;
+  height: 5.333rem;
+}
+.payment{
+  height: 1.867rem;
+  font-size: 30rpx;
+  padding-top:10rpx;
+}
+.pay-r{
+  float: left;
+  line-height: 1.867rem;
+}
+.pay-l{
+  float: right;
+  width: 4.693rem;
+  height: 1.867rem;
+  line-height: 1.867rem;
+  text-align: center;
+  border-radius: 10rpx;
+  background: #FFFFFF;
+  color: #58A4EF;
+}
+.time{
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 24rpx;
+  color:#FFFFFF;
+}
+.clock{
+  width: 1.12rem;
+  height: 1.04rem;
+  float: left;
+  margin: 0.4rem 0.267rem 0 0;
+}
+.point{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:#FFFFFF;
+  margin-top: 4.347rem;
+}
+.points{
+  width:91%;
+  height: 9.333rem;
+  .points-t{
+    height: 3.6rem;
+    border-bottom: 1px solid #EEEEEE; /*no*/
+    overflow: hidden;
+    .txt{
+        width:90%;
+        height: 1.867rem;
+        color: #43505F;
+        font-weight:500;
+        line-height: 1.173rem;
+        font-size: 28rpx;
+        float: left;
+        margin-top: 0.8rem;
+    }
+  }
+}
+
+
+.jr{
+  margin: 0.533rem 0 0.533rem 0;
+  color:#43505F;
+}
+.way,.wx{
+  color:#43505F;
+}
+.cancel{
+  width: 7.2rem;
+  height: 1.867rem;
+  line-height: 1.867rem;
+  text-align: center;
+  border-radius: 10rpx;
+  color: #FFFFFF;
+  background: #B8C0CD;
+  float: right;
+  font-size: 30rpx;
+  &.sure{
+    background: #59a5f0;
+  }
+}
+
+
+
+.number{
+  color:#FF7F00;
+  font-size:36rpx;
+  font-weight: bold;
+  margin-left: 0.8rem;
+}
+.xxl{
+  width: 0.96rem;
+  height: 0.96rem;
+  margin:0rpx 0.267rem 0 0.8rem;
+  vertical-align:middle;
+}
+.bt-img{
+  width: 20rem;
+  height: 1.307rem;
+}
+/*机票*/
+.pannel {
+  width: 90%;
+  background-color: #fff;
+  padding-top: 0.533333rem ;
+  border-radius: 14rpx;
+  margin-bottom: 1.066667rem;
+  border: 1px solid #E2E2E3;    /*no*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flight {
+  display: flex;
+  flex-direction: column;
+
+}
+.goFlight {
+  border-bottom: 1px  dashed  #E2E2E3;  /*no*/
+  padding-bottom: 0.533rem;
+
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.flightDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flightDate view {
+  display: flex;
+  flex-direction: column;
+}
+.flightDate view text {
+  font-size: 40rpx;
+}
+.flightDate view .times {
+  font-size: 26rpx;
+}
+.flightDate view .times_right{
+    text-align: right;
+}
+.flightDate view .date {
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 0.266667rem;
+  font-size: 30rpx;
+}
+.flightDate view .flightPic {
+  display: block;
+  width: 9rem;
+  height: 1.066667rem;
+  background: url('@{imgUrl}xfj.jpg') no-repeat center center;
+  background-size: cover;
+}
+.flightLine {
+  display: flex;
+  flex-direction: row;
+}
+.airport {
+  color: #aaa;
+  justify-content: space-between;
+}
+.airport text {
+  font-size: 28rpx;
+}
+.flightDetail {
+   // width: 80%;
+  height: 2.346667rem;
+  line-height: 2.346667rem;
+}
+.flightDetail text {
+  font-size: 30rpx;
+  color: #9caabc;
+}
+.flightDetail .flightName {
+  padding-left: 1.6rem;
+  background: url('@{imgUrl}logo.png') no-repeat 0.266667rem center;
+  background-size: auto 36%;
+//   width:60%;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   overflow: hidden;
+}
+// .gap{
+//    width: 20%;
+//    text-align: center;
+// }
+//  .flightType{
+//     width: 30%;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//     overflow: hidden;
+//   }
+.flightDetail .go {
+  background-color: #ff7f00;
+  color: #fff;
+  display: block;
+  font-size: 28rpx;
+  width: 2.293333rem;
+  height: 1.226667rem;
+  line-height: 1.226667rem;
+  text-align: center;
+  margin-top: 0.56rem;
+}
+.changeFlight {
+  font-size: 30rpx;
+  text-align: center;
+  color: #aaa;
+  margin-top: 0.533333rem;
+  height: 1.333333rem;
+  line-height: 1.6rem;
+  border-top: 1px solid #cacaca;       /*no*/
+}
+.changeHotel {
+  font-size: 30rpx;
+  text-align: center;
+  color: #aaa;
+  margin-top: 0.533333rem;
+  height: 1.333333rem;
+  line-height: 1.6rem;
+  border-top: 1px solid #cacaca;         /*no*/
+}
+.ticket{
+  width: 100%;
+  height: 1.867rem;
+}
+.ticket_color{
+    border-bottom: 1px solid #E2E2E3;     /*no*/
+}
+.ticket-l{
+  width: 1.573rem;
+  height: 1.067rem;
+  float: left;
+  margin: 0.16rem 0.533rem 0 0.533rem;
+}
+.grogshop-img{
+  width:1.067rem;
+  height: 1.093rem;
+}
+.ticket-r{
+  font-size: 26rpx;
+  color:#526176;
+  line-height: 1.333rem;
+}
+.user{
+  width: 100%;
+  height: 2.533rem;
+  background: #F4F4F9;
+  border-top:1px solid #E2E2E3;     /*no*/
+  border-radius: 0 0 14rpx 14rpx;
+  font-size: 26rpx;
+  color:#536277;
+}
+.per-img{
+  width: 1.067rem;
+  height: 1.013rem;
+  float: left;
+  margin:0.72rem 0.533rem 0 0.533rem;
+}
+.name{
+  float: left;
+  line-height: 2.533rem;
+}
+.rule{
+  float: right;
+  color:#FF7F00;
+  line-height: 2.533rem;
+  margin-right: 1.867rem;
+}
+.grogshop-m{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grogshop_color{
+  border-top:1px solid #E2E2E3;     /*no*/
+}
+.grogshop-b{
+  height: 2.133rem;
+  line-height: 2.133rem;
+  color: #58A4EE;
+  font-size: 26rpx;
+  //background-color: pink;
+
+}
+.grod{
+  float: left;
+  width: 11rem;
+  font-size: 30rpx;
+  color: #526177;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.type{
+  width: 3.44rem;
+  line-height: 1.253rem;
+  text-align: center;
+  font-size: 26rpx;
+  color:#58A4EE;
+  border: 1rpx solid #58A4EE;
+  border-radius: 50rpx;
+  float: right;
+}
+.inshop{
+  width: 84%;
+  margin-top: 0.533rem;
+
+}
+.act{
+  font-size: 26rpx;
+  color:#A6B2BF;
+  height: 1.333rem;
+  line-height: 1.333rem;
+}
+.act_short{
+    width:65%;
+}
+.act3{
+  color:#FF7F00;
+}
+/*用户信息*/
+.sum{
+  width: 100%;
+  height: 2.133rem;
+  line-height: 2.133rem;
+  .sum-l{
+    font-size: 28rpx;
+    color: #A7B2C0;
+    margin-left: 0.533rem;
+  }
+  .sum-r{
+    width: 80%;
+    height: 2.08rem;
+    float: right;
+    color: #526077;
+    font-size: 26rpx;
+    border-bottom: 1px solid #E2E2E3; /*no*/
+  }
+  .sum1-r{
+    height: 3.2rem;
+  }
+
+  &:last-child{
+    .sum-r{
+      border-bottom: none;
+    }
+  }
+
+
+}
+
+.sum1{
+  height: 3.2rem;
+  line-height: 1.333rem;
+}
+
+.sum1-l{
+  line-height: 3.2rem;
+}
+.cost{
+  padding-top: 0;
+}
+
+.roomDetails{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2001;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: 200;
+  font-size: 32rpx;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+
+  .closeIcon{
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,239 @@
+.container {
+  height: 100%;
+}
+
+.pd-70 {
+  padding: 0 1.866667rem;
+}
+
+.wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+.btn {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  font-size: 32rpx;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-bottom: 1px solid #cececf;
+}
+
+.btn view {
+  width: 40%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn view.active {
+  color: #59A5F0;
+  border-bottom: 3.5px solid #59A5F0;
+}
+
+.chooseCity {
+  box-sizing: border-box;
+  padding-top: 0.96rem;
+  background-color: #fff;
+  border-bottom: 1px solid #cececf;
+  overflow: hidden;
+}
+
+.pdt-0 {
+  padding-top: 0;
+}
+
+.chooseCity .citySelect {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 2.667rem;
+  line-height: 2.667rem;
+  font-size: 42rpx;
+}
+
+.chooseCity .citySelect .hotelCity {
+  width: 100%;
+  border-bottom: 1px solid #F0EFF5;
+  color: #4A586A;
+}
+
+.chooseCity .citySelect .startCity {
+  width: 6.187rem;
+  border-bottom: 1px solid #F0EFF5;
+  color: #4A586A;
+}
+
+.chooseCity .citySelect .citySelect_img {
+  width: 2.693rem;
+  height: 2.587rem;
+  position: relative;
+  margin-top: 0.533rem;
+}
+
+.chooseCity .citySelect .citySelect_img view {
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.chooseCity .citySelect .citySelect_img view .changeCity_bg {
+  width: 2.693rem;
+  height: 2.693rem;
+}
+
+.chooseCity .citySelect .citySelect_img .samll_plane {
+  width: 1.653rem;
+  height: 1.12rem;
+  position: absolute;
+  top: 54%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.chooseCity .citySelect .endCity {
+  width: 6.187rem;
+  border-bottom: 1px solid #F0EFF5;
+  text-align: right;
+  color: #4A586A;
+}
+
+.chooseDate {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 2.4rem;
+  line-height: 2.4rem;
+}
+
+.date {
+  font-size: 30rpx;
+  margin-right: 1.067rem;
+}
+
+.week {
+  color: #929fb1;
+  font-size: 26rpx;
+}
+
+.title {
+  color: #888;
+  width: 100%;
+  height: 2.13rem;
+  line-height: 2.13rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid #cececf;
+  font-size: 30rpx;
+}
+
+.person {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  background-color: #fff;
+  height: 1.813333rem;
+  line-height: 1.813333rem;
+  padding: 0.8rem 0.533333rem;
+  border-bottom: 1px solid #cececf;
+}
+
+.outer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border: 1.5px solid #a9b1bb;
+  border-radius: 8px;
+}
+
+.personNum {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.person .ml-30 {
+  margin-left: 0.8rem;
+}
+
+.outer .minus,
+.outer .num,
+.outer .plus {
+  -ms-flex: 1;
+      flex: 1;
+  text-align: center;
+}
+
+.outer .num {
+  border-left: 1.5px solid #a9b1bb;
+  border-right: 1.5px solid #a9b1bb;
+}
+
+.text {
+  font-size: 24rpx;
+  color: #536277;
+  margin-right: 0.266667rem;
+}
+
+.person .minus,
+.person .plus {
+  width: 25%;
+  height: 1.813333rem;
+  display: block;
+  text-align: center;
+}
+
+.minus {
+  font-size: 28rpx;
+  line-height: 1.813333rem;
+  font-weight: bold;
+}
+
+.plus {
+  font-size: 48rpx;
+  line-height: 1.6rem;
+}
+
+.tishi {
+  width: 0.8rem;
+  height: 1.813333rem;
+  margin-left: 0.533333rem;
+}
+
+.tishi .tsimg {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-top: 0.506667rem;
+}
+
+.sureBtn {
+  color: #fff;
+  background-color: #58a4ef;
+  width: 90%;
+  margin-top: 1.333333rem;
+}

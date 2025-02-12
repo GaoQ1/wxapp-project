@@ -1,0 +1,424 @@
+
+@import "./imgUrl/imgUrl.less";
+.containerSmall {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background:#59A5F0 ;
+  line-height:39px;
+}
+
+input{
+  font-family: '微软雅黑';
+}
+
+//隐藏
+.hid{
+  display: none!important;
+}
+//隐藏是border取消
+.airpeople_Line{
+  border-bottom: none!important;
+}
+.head {
+  background: #59A5F0 ;
+  width: 100%;
+  position: fixed;
+  padding-left: 39px;
+  padding-right: 39px;
+  z-index: 1001;
+  box-sizing: border-box;
+}
+.line {
+  color: #FFFFFF;
+  font-size: 32rpx;
+}
+
+.state {
+  color: #C5DFF9;
+  height: 60px;
+  .gostate {
+    font-size: 26rpx;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    .txtstate_02{
+      margin-right: 0.933rem;
+      margin-left: 0.933rem;
+      height: 65px;
+    }
+    .txtstate_03{
+      margin-left: 0.33rem;
+    }
+    .txtstate_04{
+      display: inline-block;
+      width: 123px;
+      height: 65px;
+      text-align: right
+    }
+  }
+}
+
+//未知
+.ordergood {
+  background:#F0EFF5;
+  position: absolute;
+  top:119rpx;
+  width: 100%;
+  font-size: 28rpx;
+}
+
+.banner {
+  width:100%;
+  border-bottom: 1px solid #C7C7C7;/*no*/
+  margin-top: 0;
+  background: #fff;
+  margin-bottom: 37px;
+  padding-left:34px;
+  box-sizing: border-box;
+}
+
+.airpeople {
+  height: 104px;
+  border-bottom:1px solid #C7C7C7;/*no*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  input{
+      font-family:'Microsoft YaHei';
+  }
+  .airp {
+    display:block;
+    color: #536277;
+    width:4.8rem;
+  }
+  &.airLine{
+    border-top: 1px solid #C7C7C7;/*no*/
+  }
+  .star{
+      display:inline-block;
+      height: 100px;
+      line-height: 100px;
+      color:#ff7f00;
+  }
+  .addp {
+    margin-right:39px;
+    .add {
+      width: 58px;
+      height: 58px;
+    }
+  }
+  .picker{
+    margin-right: 42px;
+  }
+
+}
+
+.person {
+  // height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #C7C7C7; /*no*/
+
+  &:last-child{
+    border-bottom: none;
+  }
+
+  .delete {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+    .del{
+       width: 44px;
+       height: 44px;
+    }
+  }
+
+  .pers {
+    width:40px;
+    height: 38px;
+    margin-right: 10px;
+    .per{
+      width:40px;
+      height: 38px;
+    }
+  }
+
+  .message {
+    width: 100%;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    text {
+      display: block;
+      color: #536277;
+
+      &.name{
+        width: 40%;
+      }
+
+      &.card{
+        width: 60%;
+      }
+
+    }
+
+
+    .arow {
+      width: 15px;
+      height: 26px;
+      margin-right: 39px;
+      .arow_01{
+         width: 15px;
+         height: 26px;
+      }
+    }
+  }
+
+
+}
+
+
+//联系人信息
+.banner_02{
+    border-top: 1px solid #C7C7C7;/*no*/
+    padding-top: 0px;
+}
+.airpeople_01{
+     border-bottom:none;
+}
+
+
+//发票信息
+.body-view_01{
+    display: block;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    margin-right:39px;
+    box-sizing: border-box;
+    switch{
+      display: block;
+      height: 100px;
+      line-height: 100px;
+      margin-top: 18px;
+    }
+}
+
+.hot_02{
+  display: inline-block;
+  width: 500px;
+  padding-right: 0;
+  line-height: 100px;
+  input{
+    font-size: 28rpx;
+  }
+}
+.arow_03{
+  width: 15px;
+  height: 26px;
+  margin-right: 39px;
+  margin-top:0px;
+}
+//优惠券
+.banner_03{
+    height: 206px;
+    border-top: 1px solid #C7C7C7;    /*no*/
+    border-bottom: 1px solid #C7C7C7; /*no*/
+    padding-top: 0px;
+
+}
+.bannerHot{
+  width:100%;
+  border-top: 1px solid #C7C7C7; /*no*/
+  border-bottom: 1px solid #C7C7C7; /*no*/
+  background: #fff;
+  margin-bottom: 37px;
+  padding-left:34px;
+  box-sizing: border-box;
+
+}
+.layout_01 {
+    height:206px;
+}
+.airpeople_02{
+    height:100px;
+    width: 100%;
+    padding-left:35px;
+    border-bottom:0;
+    box-sizing: border-box;
+}
+.airpeople_03{
+  height: 100px;
+  padding-left:35px;
+  border-bottom:1px solid #C7C7C7;/*no*/
+}
+
+.picker{
+    color:#929FB1;
+    font-family:'Microsoft YaHei';
+
+}
+//公共样式
+label {
+  width: 242rpx;
+}
+input {
+  height: 100px;
+  line-height: 100px;
+  width: 500px;
+  display: block;
+}
+.insure {
+  height: 105px;
+  padding-top: 0;
+  margin-bottom: 50px;
+  border-top:1px solid #C7C7C7;/*no*/
+}
+.layout_02 {
+  height: 105px;
+  padding-left:34px;
+  border-top:1px solid #C7C7C7;/*no*/
+}
+
+.airsure {
+  width: 549px;
+  height: 105px;
+  line-height: 105px;
+}
+.airinsure {
+  color: #536277;
+  margin-right: 10px;
+}
+
+.whole {
+  margin-top: 15rpx;
+}
+.rule {
+  font-size: 0.75em;
+  color: #929FB1;
+  font-weight: bold;
+  margin-top: 15rpx;
+
+}
+.body-view {
+   margin-top: -40rpx;
+   margin-right: 35rpx;
+
+}
+/*相关条款样式*/
+.read {
+  margin-top: 20px;
+  height: 215px;
+  width: 100%;
+  margin: 0 auto;
+  .agree{
+    display: flex;
+    align-items: center;
+  }
+  .nochoose,.choose {
+    height: 82px;
+    margin-left: 34px;
+    margin-top: -5px;
+  }
+  .check,.checked {
+    width: 39px;
+    height: 39px;
+    margin-right: 10px;
+  }
+  .txt {
+    color:#929FB1;
+    font-size:26rpx;
+    height: 82px;
+    navigator {
+      color:#59A5F0;
+      text-decoration: underline;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
+
+/*底部样式*/
+.foot{
+   width: 100%;
+   height: 104px;
+   position: fixed;
+   bottom: 0;
+   display: -webkit-flex;
+   display: -webkit-box;
+   .price{
+      height: 104px;
+      background:#526071;
+      line-height: 104px;
+      padding-left: 32px;
+      box-sizing: border-box;
+      width: 70%;
+      .total{
+        width: 50%;
+        font-size: 20rpx;
+        color: #fff;
+        height: 104px;
+        line-height: 104px;
+        display:inline-block;
+        .money {
+            font-size: 42rpx;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+      }
+      .detail{
+          display: inline-block;
+          height: 104px;
+          width: 50%;
+          line-height: 104px;
+          text-align: center;
+          font-size: 0;
+          text {
+              display: inline-block;
+              color: #fff;
+              font-size: 30rpx;
+              // font-weight: bold;
+              line-height: 104px;
+              text-align: center;
+              margin-right: 10px;
+               }
+          image{
+              display: inline-block;
+              width: 21px;
+              height: 13px;
+              margin-left: 8px;
+
+            }
+         }
+        }
+   .btn{
+     width: 30%;
+     height: 104px;
+     .next{
+       display: block;
+       border-radius: 0;
+       height: 104px;
+       background:#FF9A16;
+       border:0;
+       text{
+         display: block;
+         height: 104px;
+          color: #fff;
+          text-align: center;
+          font-size: 36rpx;
+          line-height: 104px;
+       }
+     }
+   }
+}

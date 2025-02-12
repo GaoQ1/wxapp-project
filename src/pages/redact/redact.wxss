@@ -1,0 +1,139 @@
+page {
+  background-color: #F0EFF5;
+}
+
+.container {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #f0eff5;
+}
+
+.wrap {
+  width: 100%;
+  border-top: 1px solid #cbcbcc;
+  border-bottom: 1px solid #cbcbcc;
+  background: #FFFFFF;
+  font-size: 0.75em;
+  margin-top: 1.6rem;
+  padding-left: 0.933333rem;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.sum {
+  height: 2.666667rem;
+  line-height: 2.666667rem;
+  border-bottom: 1px solid #cbcbcc;
+  font-size: 0;
+}
+
+.sumLine {
+  border-bottom: 0;
+}
+
+.txt {
+  float: left;
+  display: block;
+  width: 6.4rem;
+  height: 2.666667rem;
+  color: #929fb1;
+  font-size: 32.81rpx;
+}
+
+.img {
+  float: right;
+  display: block;
+  width: 0.8rem;
+  height: 2.666667rem;
+  margin-right: 0.933333rem;
+}
+
+.inp {
+  float: left;
+  display: block;
+  width: 10.666667rem;
+  height: 2.666667rem;
+  line-height: 2.666667rem;
+  color: #4A586A;
+}
+
+.img1 {
+  width: 0.64rem;
+  height: 0.666667rem;
+  display: block;
+  margin-top: 0.933333rem;
+}
+
+.inp2 {
+  color: #59A5F0;
+}
+
+.comuse {
+  width: 18.666667rem;
+  height: 2.666667rem;
+  line-height: 2.666667rem;
+  margin: 0 auto;
+}
+
+.usetxt {
+  font-size: 32.81rpx;
+  color: #4a586a;
+  float: left;
+}
+
+.swit {
+  float: right;
+  margin-top: 0.533333rem;
+}
+
+.dot {
+  float: left;
+  color: #FF7F00;
+  font-size: 0.75em;
+}
+
+.doubt-wrap {
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 400rpx;
+}
+
+.txt2 {
+  line-height: 30rpx;
+  margin-top: 20rpx;
+}
+
+.add {
+  background: #59A5F0;
+  color: #FFFFFF;
+  width: 17.6rem;
+  height: 2.24rem;
+  line-height: 2.24rem;
+  margin-top: 1.6rem;
+}
+
+.radio-group {
+  float: right;
+}
+
+.radio {
+  margin-right: 35rpx;
+}
+
+.hint {
+  font-size: 0.75em;
+  color: #4A586A;
+  height: 80rpx;
+  line-height: 80rpx;
+}

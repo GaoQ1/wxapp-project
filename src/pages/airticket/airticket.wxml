@@ -1,0 +1,103 @@
+<import src="../component/toast.wxml"/>
+<!--pages/airticket/airticket.wxml-->
+<view wx:if="{{loading}}" class="loadingOuter">
+    <view class="loadingInner">
+      <view class="loadmore">
+          <view class="loading"></view>
+          <view class="loadmore__tips">这里要久一点。。。</view>
+      </view>
+      <view class="loadmore loadmore_line">
+          <view class="loadmore__tips loadmore__tips_in-line">暂无数据</view>
+      </view>
+      <view class="loadmore loadmore_line">
+          <view class="loadmore__tips loadmore__tips_in-line loadmore__tips_in-dot"></view>
+      </view>
+    </view>
+</view>
+
+<view wx:else class="container">
+<!--头部-->
+  <template is="warn1" data="{{ toast1 }}"/>
+  <view class="head">
+            <view class="go">{{type!=1?"返程":"去程"}}</view>
+            <text class="city">{{orgCity}}-{{destCity}}</text>
+            <text class="time">{{dateTxt}}</text>
+            <text class="number" hidden="{{!count}}">共{{count}}条</text>
+  </view>
+    <view class="wrap">
+        <scroll-view scroll-y="true">
+        <!--机票信息start-->
+            <view class="ticketList" wx:for="{{list}}" wx:for-index="index" wx:key="index" wx:for-item="fl" >
+                <view data-index="{{index}}" bindtap="changeDownHandle">
+                    <view class="ticketList_top">
+                        <view class="flight_info">
+                            <view class="flight_info_t">
+                                <text>{{fl.FightStartDate}}</text>
+                                <view>
+                                    <view class="timeLine">
+                                        <image src="../../images/flight.png" class="img"></image>
+                                    </view>
+                                </view>
+                                <text>{{fl.FightEndDate}}</text>
+                            </view>
+                            <view class="flight_info_b">
+                                <text>{{fl.StartAirportName}}</text>
+                                <text>{{fl.EndAirportName}}</text>
+                            </view>
+                        </view>
+                        <view class="flight_price">
+                            <view class="price">
+                                <text style="font-size:22px; color:#FF7F00">{{fl.asy}}</text>
+                                <text style="color:#FF7F00">¥</text>
+                                <text style="font-size:22px; color:#FF7F00">{{fl.minPrice}}</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="ticketList_btm">
+                        <view>
+                            <text>{{fl.AirlineName}}{{fl.FightCode}}</text><text style="margin:0 15rpx;">|</text>
+                            <text>{{fl.AirType}}</text>
+                        </view>
+                        <view class="{{fl.hidden?'shadow shadDow':'shadow'}}"></view>
+                        <!--箭头向上-->
+                        <!--<image src="../../images/up_Img.png"></image>-->
+                        <!--箭头向下-->
+                        <!--<image src="../../images/down_Img.png"></image> -->
+                    </view>
+                </view>
+                <!--机票价格及预订-->
+                <view class="ticketDetail" hidden="{{fl.hidden}}" >
+                    <view class="ticketDetailList" wx:for="{{fl.AirSpaceList}}" wx:for-item="al" wx:for-index="idx" wx:key="idx" bindtap="ticketSearch_back" data-al-index="{{idx}}" data-fl-index="{{index}}">
+                        <image class="arrow" src="../../images/arow.png"></image>
+                        <view class="book">
+                            <view class="cabinType">
+                                <text class="privilege">{{al.AirSpaceName}}</text>
+                            </view>
+                            <view class="price">
+                                <text>{{al.asy}}</text>
+                                <text class="rmb">¥</text>
+                                <text>{{al.PriceDifference}}</text>
+                            </view>
+                        </view>
+                        <view class="priceInfo">
+                            <view class="reminder" catchtap="catchTapHandle">
+                                <view class="mealService">
+                                    <image src="../../images/visa_gray.png"></image>
+                                    <text data-al-index="{{idx}}" data-fl-index="{{index}}" bindtap='showExitChangeSignRule'>退改签详情</text>
+                                </view>
+                            </view>
+                            <view class="moreTicket" style='{{al.color?"color:red":""}}'>{{al.storeStatus}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        <!--wrap结束-->
+        </scroll-view>
+    </view>
+<!--尾部-->
+  <!-- <view class="foot">
+            <view class="go">返程</view>
+            <text class="city">北京-上海</text>
+            <text class="time">09月15日</text>
+  </view> -->
+</view>

@@ -1,0 +1,76 @@
+page {
+  height: 100%;
+}
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+}
+
+.wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  border-top: 1px solid #C7C7C9;
+  border-bottom: 1px solid #C7C7C9;
+  background: #FFFFFF;
+  margin-top: 1.866667rem;
+  font-size: 26rpx;
+}
+
+.wrap-top {
+  width: 87%;
+  border-bottom: 1px solid #D6D6D6;
+  padding-top: 0.4rem;
+  padding-bottom: 0.3rem;
+}
+
+.wrap-btm {
+  width: 87%;
+  height: 2.213rem;
+}
+
+.txt {
+  color: #525F76;
+  letter-spacing: 0.107rem;
+  line-height: 1.173rem;
+  display: block;
+  margin-bottom: .2rem;
+}
+
+.number {
+  height: 2.213rem;
+  line-height: 2.213rem;
+  color: #A6B2BF;
+}
+
+.time {
+  color: #A6B2BF;
+  height: 1.333rem;
+  line-height: 1.333rem;
+}
+
+.odd {
+  float: left;
+}
+
+.pay {
+  float: right;
+}
+
+.paytxt {
+  color: #FF7F00;
+  margin-left: 0.267rem;
+}
+
+.yetpay {
+  float: right;
+  color: #525F76;
+  margin-top: -0.6rem;
+}

@@ -1,0 +1,27 @@
+.guarantee {
+  padding: 2%;
+  font-size: 24rpx;
+}
+
+.guarantee text {
+  display: block;
+  margin-bottom: 2%;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.guarantee text.addBold {
+  font-weight: bold;
+}
+
+.guarantee text.disInline {
+  display: inline-block;
+}
+
+.guarantee text.font28 {
+  font-size: 28rpx;
+}
+
+.guarantee text.font26 {
+  font-size: 28rpx;
+}

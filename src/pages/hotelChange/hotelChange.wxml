@@ -1,0 +1,38 @@
+<view wx:if="{{loading}}" class="loadingOuter">
+    <view class="loadingInner">
+      <view class="loadmore">
+          <view class="loading"></view>
+          <view class="loadmore__tips">正在加载</view>
+      </view>
+      <view class="loadmore loadmore_line">
+          <view class="loadmore__tips loadmore__tips_in-line">暂无数据</view>
+      </view>
+      <view class="loadmore loadmore_line">
+          <view class="loadmore__tips loadmore__tips_in-line loadmore__tips_in-dot"></view>
+      </view>
+    </view>
+</view>
+
+<view wx:else class="container">
+    <view class="top">
+        <text>{{hotelCityName}}</text>
+        <view class="info">{{hotelCheckInDate}}<text class="left">入住  ——</text>{{hotelCheckOutDate}}<text class="right">离店</text></view>
+    </view>
+    <view class="main">
+        <view wx:for="{{hotelList}}" wx:key="{{index}}" class="hotelInfo" bindtap="gotoHotelDetails" data-index="{{index}}">
+            <image class="rightIcon" src="{{item.PictureAppURL}}">
+                <image wx:if="{{index === 0}}" class="relativeIcon" src="../../images/right_icon.png"></image>
+            </image>
+            <view class="hotelName">{{item.HotelName}}</view>
+            <view class="messageDetail">
+                <view class="leftMap">
+                    <image class="mapIcon" src="../../images/map.png"></image>
+                    <text>{{item.HotelAddress}}</text>
+                </view>
+                <view class="Priceright">
+                    <text class="{{item.PriceDiffrence >= 0 ? 'add' : 'reduce'}}">{{item.PriceDiffrence >= 0 ? '+' : '-'}}￥{{item.PriceDiffrence >= 0 ? item.PriceDiffrence : (-item.PriceDiffrence)}}</text>
+                </view>
+            </view>
+        </view>
+
+    </view>

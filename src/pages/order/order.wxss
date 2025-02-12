@@ -1,0 +1,461 @@
+.containerSmall {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #59A5F0;
+  line-height: 1.04rem;
+}
+
+input {
+  font-family: '\5FAE\8F6F\96C5\9ED1';
+}
+
+.hid {
+  display: none!important;
+}
+
+.airpeople_Line {
+  border-bottom: none!important;
+}
+
+.head {
+  background: #59A5F0;
+  width: 100%;
+  position: fixed;
+  padding-left: 1.04rem;
+  padding-right: 1.04rem;
+  z-index: 1001;
+  box-sizing: border-box;
+}
+
+.line {
+  color: #FFFFFF;
+  font-size: 32rpx;
+}
+
+.state {
+  color: #C5DFF9;
+  height: 1.6rem;
+}
+
+.state .gostate {
+  font-size: 26rpx;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  overflow: hidden;
+}
+
+.state .gostate .txtstate_02 {
+  margin-right: 0.933rem;
+  margin-left: 0.933rem;
+  height: 1.733333rem;
+}
+
+.state .gostate .txtstate_03 {
+  margin-left: 0.33rem;
+}
+
+.state .gostate .txtstate_04 {
+  display: inline-block;
+  width: 3.28rem;
+  height: 1.733333rem;
+  text-align: right;
+}
+
+.ordergood {
+  background: #F0EFF5;
+  position: absolute;
+  top: 119rpx;
+  width: 100%;
+  font-size: 28rpx;
+}
+
+.banner {
+  width: 100%;
+  border-bottom: 1px solid #C7C7C7;
+  margin-top: 0;
+  background: #fff;
+  margin-bottom: 0.986667rem;
+  padding-left: 0.906667rem;
+  box-sizing: border-box;
+}
+
+.airpeople {
+  height: 2.773333rem;
+  border-bottom: 1px solid #C7C7C7;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.airpeople input {
+  font-family: 'Microsoft YaHei';
+}
+
+.airpeople .airp {
+  display: block;
+  color: #536277;
+  width: 4.8rem;
+}
+
+.airpeople.airLine {
+  border-top: 1px solid #C7C7C7;
+}
+
+.airpeople .star {
+  display: inline-block;
+  height: 2.666667rem;
+  line-height: 2.666667rem;
+  color: #ff7f00;
+}
+
+.airpeople .addp {
+  margin-right: 1.04rem;
+}
+
+.airpeople .addp .add {
+  width: 1.546667rem;
+  height: 1.546667rem;
+}
+
+.airpeople .picker {
+  margin-right: 1.12rem;
+}
+
+.person {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 1px solid #C7C7C7;
+}
+
+.person:last-child {
+  border-bottom: none;
+}
+
+.person .delete {
+  width: 1.173333rem;
+  height: 1.173333rem;
+  margin-right: 0.533333rem;
+}
+
+.person .delete .del {
+  width: 1.173333rem;
+  height: 1.173333rem;
+}
+
+.person .pers {
+  width: 1.066667rem;
+  height: 1.013333rem;
+  margin-right: 0.266667rem;
+}
+
+.person .pers .per {
+  width: 1.066667rem;
+  height: 1.013333rem;
+}
+
+.person .message {
+  width: 100%;
+  padding: 0.266667rem;
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.person .message text {
+  display: block;
+  color: #536277;
+}
+
+.person .message text.name {
+  width: 40%;
+}
+
+.person .message text.card {
+  width: 60%;
+}
+
+.person .message .arow {
+  width: 0.4rem;
+  height: 0.693333rem;
+  margin-right: 1.04rem;
+}
+
+.person .message .arow .arow_01 {
+  width: 0.4rem;
+  height: 0.693333rem;
+}
+
+.banner_02 {
+  border-top: 1px solid #C7C7C7;
+  padding-top: 0;
+}
+
+.airpeople_01 {
+  border-bottom: none;
+}
+
+.body-view_01 {
+  display: block;
+  line-height: 2.666667rem;
+  height: 2.666667rem;
+  width: 2.666667rem;
+  margin-right: 1.04rem;
+  box-sizing: border-box;
+}
+
+.body-view_01 switch {
+  display: block;
+  height: 2.666667rem;
+  line-height: 2.666667rem;
+  margin-top: 0.48rem;
+}
+
+.hot_02 {
+  display: inline-block;
+  width: 13.333333rem;
+  padding-right: 0;
+  line-height: 2.666667rem;
+}
+
+.hot_02 input {
+  font-size: 28rpx;
+}
+
+.arow_03 {
+  width: 0.4rem;
+  height: 0.693333rem;
+  margin-right: 1.04rem;
+  margin-top: 0;
+}
+
+.banner_03 {
+  height: 5.493333rem;
+  border-top: 1px solid #C7C7C7;
+  border-bottom: 1px solid #C7C7C7;
+  padding-top: 0;
+}
+
+.bannerHot {
+  width: 100%;
+  border-top: 1px solid #C7C7C7;
+  border-bottom: 1px solid #C7C7C7;
+  background: #fff;
+  margin-bottom: 0.986667rem;
+  padding-left: 0.906667rem;
+  box-sizing: border-box;
+}
+
+.layout_01 {
+  height: 5.493333rem;
+}
+
+.airpeople_02 {
+  height: 2.666667rem;
+  width: 100%;
+  padding-left: 0.933333rem;
+  border-bottom: 0;
+  box-sizing: border-box;
+}
+
+.airpeople_03 {
+  height: 2.666667rem;
+  padding-left: 0.933333rem;
+  border-bottom: 1px solid #C7C7C7;
+}
+
+.picker {
+  color: #929FB1;
+  font-family: 'Microsoft YaHei';
+}
+
+label {
+  width: 242rpx;
+}
+
+input {
+  height: 2.666667rem;
+  line-height: 2.666667rem;
+  width: 13.333333rem;
+  display: block;
+}
+
+.insure {
+  height: 2.8rem;
+  padding-top: 0;
+  margin-bottom: 1.333333rem;
+  border-top: 1px solid #C7C7C7;
+}
+
+.layout_02 {
+  height: 2.8rem;
+  padding-left: 0.906667rem;
+  border-top: 1px solid #C7C7C7;
+}
+
+.airsure {
+  width: 14.64rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+}
+
+.airinsure {
+  color: #536277;
+  margin-right: 0.266667rem;
+}
+
+.whole {
+  margin-top: 15rpx;
+}
+
+.rule {
+  font-size: 0.75em;
+  color: #929FB1;
+  font-weight: bold;
+  margin-top: 15rpx;
+}
+
+.body-view {
+  margin-top: -40rpx;
+  margin-right: 35rpx;
+}
+
+/*相关条款样式*/
+
+.read {
+  margin-top: 0.533333rem;
+  height: 5.733333rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.read .agree {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.read .nochoose,
+.read .choose {
+  height: 2.186667rem;
+  margin-left: 0.906667rem;
+  margin-top: -0.133333rem;
+}
+
+.read .check,
+.read .checked {
+  width: 1.04rem;
+  height: 1.04rem;
+  margin-right: 0.266667rem;
+}
+
+.read .txt {
+  color: #929FB1;
+  font-size: 26rpx;
+  height: 2.186667rem;
+}
+
+.read .txt navigator {
+  color: #59A5F0;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+/*底部样式*/
+
+.foot {
+  width: 100%;
+  height: 2.773333rem;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -webkit-box;
+}
+
+.foot .price {
+  height: 2.773333rem;
+  background: #526071;
+  line-height: 2.773333rem;
+  padding-left: 0.853333rem;
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.foot .price .total {
+  width: 50%;
+  font-size: 20rpx;
+  color: #fff;
+  height: 2.773333rem;
+  line-height: 2.773333rem;
+  display: inline-block;
+}
+
+.foot .price .total .money {
+  font-size: 42rpx;
+  font-weight: bold;
+  margin-left: 0.4rem;
+}
+
+.foot .price .detail {
+  display: inline-block;
+  height: 2.773333rem;
+  width: 50%;
+  line-height: 2.773333rem;
+  text-align: center;
+  font-size: 0;
+}
+
+.foot .price .detail text {
+  display: inline-block;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 2.773333rem;
+  text-align: center;
+  margin-right: 0.266667rem;
+}
+
+.foot .price .detail image {
+  display: inline-block;
+  width: 0.56rem;
+  height: 0.346667rem;
+  margin-left: 0.213333rem;
+}
+
+.foot .btn {
+  width: 30%;
+  height: 2.773333rem;
+}
+
+.foot .btn .next {
+  display: block;
+  border-radius: 0;
+  height: 2.773333rem;
+  background: #FF9A16;
+  border: 0;
+}
+
+.foot .btn .next text {
+  display: block;
+  height: 2.773333rem;
+  color: #fff;
+  text-align: center;
+  font-size: 36rpx;
+  line-height: 2.773333rem;
+}

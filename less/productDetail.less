@@ -1,0 +1,234 @@
+@import "./imgUrl/imgUrl.less";
+
+.container{
+  padding: 20px;
+}
+
+.pannel{
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 14px; /*no*/
+  margin-bottom: 40px;
+  border: 1px solid #cacaca; /*no*/
+}
+.dateNum{
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  padding: 30px 44px 30px 34px;
+  align-items: center;
+}
+.date text{
+  font-size: 30rpx;
+}
+.date .small{
+  color: #aaa;
+  font-size: 25rpx;
+  margin-left: 10px;
+}
+.num{
+  text{
+    font-size: 30rpx;
+  }
+  width: 26%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flight{
+  display: flex;
+	flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.flightDate{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flightDate view{
+  display: flex;
+  flex-direction: column;
+}
+.flightDate view text{
+  font-size: 27rpx;
+}
+.flightDate view .time{
+  font-size: 50rpx;
+}
+.flightDate view .date{
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30rpx;
+}
+.flightDate view .flightPic{
+  display: block;
+  width: 325px;
+  height: 40px;
+  background: url('@{imgUrl}flight.png') no-repeat center center;
+  background-size: cover;
+}
+.flightLine{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.airport{
+  color: #aaa;
+  text{
+    font-size: 28rpx;
+  }
+}
+.airport .small{
+  font-size: 22rpx;
+}
+
+.flightDetail{
+  height: 80px;
+  line-height: 80px;
+  border-top: 1px dashed #cacaca;/*no*/
+  margin-top: 8px;
+  text{
+    font-size: 30rpx;
+    color: #9caabc;
+  }
+  .flightName{
+    padding-left: 60px;
+    background: url('@{imgUrl}logo.png') no-repeat 10px center;
+    background-size: auto 36%;
+
+    width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .flightType{
+    width: 30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .vertical{
+    width: 20%;
+    text-align: center;
+  }
+
+  .go{
+    background-color: #ff7f00;
+    color: #fff;
+    display: block;
+    font-size: 28rpx;
+    width: 86px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 21px;
+  }
+}
+
+
+.remark{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 34px;
+  view{
+    color: #ff7f00;
+    font-size: 22rpx;
+    margin-left: 10px;
+  }
+}
+
+
+.changeFlight{
+  font-size: 30rpx;
+  text-align: center;
+  color: #aaa;
+  height: 50px;
+  line-height: 60px;
+}
+.changeHotel{
+  font-size: 30rpx;
+  text-align: center;
+  color: #aaa;
+  margin-top: 20px;
+  height: 50px;
+  line-height: 60px;
+  border-top: 1px solid #cacaca;/*no*/
+}
+.goFlight{
+  border-bottom: 1px solid #cacaca;/*no*/
+}
+
+.backFlight{
+  border-bottom: 1px solid #cacaca;/*no*/
+  padding-top: 20px;
+}
+
+/*酒店*/
+.hotel{
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 110px;
+}
+.hotel .hotelPic{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hotelPic image{
+  height: 342px;
+}
+
+.hotelHead{
+  display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+}
+.hotelName{
+  display: flex;
+	flex-direction: column;
+}
+.hotelName text{
+  font-size: 32rpx;
+}
+.hotelName .pink{
+  font-size: 25rpx;
+  color: #ff7f00;
+}
+.hotelDetail{
+  font-size: 27rpx;
+  color: #aaa;
+}
+
+.address{
+  display: flex;
+	flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 27rpx;
+
+  .grey{
+    padding-left: 40rpx;
+  }
+
+  view{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    .icon{
+      width: 30rpx;
+      height: 35rpx;
+      margin-right: 10rpx;
+      background: url('@{imgUrl}map.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+}
